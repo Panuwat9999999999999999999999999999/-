@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* สลับรูปพื้นหลัง */
+  animation: backgroundSwitch 30s infinite alternate;
+  background-color: #000; /* พื้นหลังสำรอง ไม่ให้ขาว */
+  animation: backgroundSwitch 40s infinite alternate;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes backgroundSwitch {
+  0% {
+    background-image: url("images/chiangmaitall.jpg"); /* รูปที่ 1 */
+  }
+  25% {
+    background-image: url("images/chiangmaitall2.jpg"); /* รูปที่ 2 */
+  }
+  50% {
+    background-image: url("images/chiangmaitall3.jpg"); /* รูปที่ 3 */
+  }
+  75% {
+    background-image: url("images/chiangmaitall4.jpg"); /* รูปที่ 4 */
+  }
+  100% {
+    background-image: url("images/chiangmaitall5.jpg"); /* รูปที่  */
+  }
+}
+
+/* ส่วนอื่นๆ */
+header {
+  background-color: #25191b;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.place-title {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+  display: inline-block; /* เพื่อให้ scale ทำงาน */
+}
+
+.place-title:hover {
+  transform: scale(1.3);
+  color: #f8cdda; /* เพิ่มลูกเล่น เปลี่ยนสีขณะ hover ได้ */
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
